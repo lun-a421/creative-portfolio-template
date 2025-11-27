@@ -11,15 +11,15 @@ _Date:_ [27/11/2025 - Week 2]
 
 ### What are you building?
 
-<!-- I will create a portfolio template that is  -->
+<!-- I will create a portfolio template that is for a graphic designer. It will be minimal but with fun, interactive details, that will showcase a functional design but still fun and aesthetic.  -->
 
 ### Who is it for?
 
-<!-- Define your target audience -->
+<!-- My target audience will be a designers or artists, or more specifically a graphic designer that want to showcase their works. -->
 
 ### Why does it matter?
 
-<!-- Explain the purpose and value of your project -->
+<!-- It matters since its the way they show their hard work, and it is important as if it is bad, all the projects go to trash and all that effort is wasted. -->
 
 ---
 
@@ -61,11 +61,11 @@ _Date:_ [27/11/2025 - Week 2]
 
 ### Content Sources
 
-<!-- Where will your content come from? -->
+<!-- My content will come from my own portfolio -->
 
 ### Multilingual Considerations
 
-- Primary language:
+- Primary language: English
 - Secondary language (optional):
 - Translation strategy:
 
