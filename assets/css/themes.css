@@ -55,7 +55,7 @@
 	 * Semantic naming (bg, text, accent) makes colors self-documenting.
 	 */
   --color-bg: #feffd6; /* Near-black background */
-  --color-bg-alt: #1d1d1d; /* Slightly lighter for depth/sections */
+  --color-bg-alt: #feffd6; /* Slightly lighter for depth/sections */
   --color-text: #080808; /* Off-white for readability (not pure white) */
   --color-text-muted: #191919; /* Subdued text for secondary content */
   --color-accent: #6366f1; /* Indigo — primary brand color */
