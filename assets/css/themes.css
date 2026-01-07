@@ -56,6 +56,7 @@
 	 */
   --color-bg: #feffd6; /* Near-black background */
   --color-bg-alt: #feffd6; /* Slightly lighter for depth/sections */
+  --color-nav-text: #feffd6;
   --color-text: #080808; /* Off-white for readability (not pure white) */
   --color-text-muted: #191919; /* Subdued text for secondary content */
   --color-accent: #6366f1; /* Indigo — primary brand color */

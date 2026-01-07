@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(15, 15, 15, 0.9);
+  background: #e87a3f;
   backdrop-filter: blur(10px);
   padding: var(--space-md) 0;
 }
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: min(90%, 1200px);
+  width: min(80%, 1200px);
   margin-inline: auto;
 }
 
