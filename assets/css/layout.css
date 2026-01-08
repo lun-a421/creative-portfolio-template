@@ -406,12 +406,13 @@
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
-  stroke-width: 2px rgba(0, 0, 0, 0.3);
+  border: 3px solid rgba(0, 0, 0, 0.882); /* Fine stroke */
 }
 
 .project-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 3px solid rgb(252, 123, 3); /* Slightly darker stroke on hover */
 }
 
 .project-image {
@@ -478,6 +479,7 @@
   text-align: center;
   color: var(--color-text-muted);
   font-size: var(--text-sm);
+  background-color: #e87a3f;
 }
 
 .footer .container {
