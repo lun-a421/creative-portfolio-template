@@ -434,3 +434,41 @@ window.cleanupScrollObservers = () => {
   staggerObserver.disconnect();
   console.log("🧹 Observers cleaned up");
 };
+// filepath: /assets/js/draggable.js
+document.querySelectorAll(".decorative-image").forEach((image) => {
+  image.addEventListener("mousedown", startDrag);
+  image.addEventListener("touchstart", startDrag);
+
+  function startDrag(event) {
+    event.preventDefault();
+    const isTouch = event.type === "touchstart";
+    const startX = isTouch ? event.touches[0].clientX : event.clientX;
+    const startY = isTouch ? event.touches[0].clientY : event.clientY;
+
+    const onMove = (moveEvent) => {
+      const currentX = isTouch
+        ? moveEvent.touches[0].clientX
+        : moveEvent.clientX;
+      const currentY = isTouch
+        ? moveEvent.touches[0].clientY
+        : moveEvent.clientY;
+
+      const deltaX = currentX - startX;
+      const deltaY = currentY - startY;
+
+      image.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    };
+
+    const onEnd = () => {
+      document.removeEventListener("mousemove", onMove);
+      document.removeEventListener("mouseup", onEnd);
+      document.removeEventListener("touchmove", onMove);
+      document.removeEventListener("touchend", onEnd);
+    };
+
+    document.addEventListener("mousemove", onMove);
+    document.addEventListener("mouseup", onEnd);
+    document.addEventListener("touchmove", onMove);
+    document.addEventListener("touchend", onEnd);
+  }
+});
