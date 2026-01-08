@@ -1,3 +1,38 @@
+/_ WHAT I SAID TO COPILOT _/
+Create a clear step-by-step Markdown plan to update my website. Follow the steps in this exact order and explain briefly what files and changes are needed in each step.
+
+STEP 1 – Typography
+
+- Add and apply a custom WOFF font to the entire website.
+- The font file is already available (WOFF format).
+- Use @font-face in CSS and set it as the main font for the body and headings.
+
+STEP 2 – Navigation Bar Text Alignment
+
+- Update the navigation bar so that all navigation text items are centered horizontally.
+- They should no longer be aligned to the left.
+- Use modern CSS (Flexbox preferred).
+
+STEP 3 – Navigation Links to Sections
+
+- Make sure each navigation button scrolls to the correct section on the page:
+  - "Home" → Home section
+  - "About" → About Me section
+  - "Projects" → My Projects section
+  - "Contact" → Get In Touch section
+- Use proper anchor links and section IDs.
+- Ensure smooth scrolling if possible.
+
+STEP 4 – Project Cards Layout
+
+- In the "My Projects" section, update the layout so that the project cards appear side by side (horizontally).
+- They should no longer stack vertically.
+- Use Flexbox or CSS Grid and make it responsive.
+
+After the Markdown plan, provide the necessary HTML and CSS code changes to implement each step.
+
+/_ WHAT COPILOT RESPOND ME _/
+
 # Step-by-Step Plan to Update the Website
 
 ## STEP 1 – Typography

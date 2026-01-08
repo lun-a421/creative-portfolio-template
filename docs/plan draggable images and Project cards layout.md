@@ -1,3 +1,31 @@
+/_ WHAT I SAID TO COPILOT _/
+Create a clear step-by-step Markdown plan to update my website. Follow the steps in this exact order and explain briefly what files and changes are required in each step.
+
+STEP 1 – Replace Decorative Squares with Draggable Images
+
+- Replace the following decorative elements:
+  <div class="decorative-square top-left"></div>
+  <div class="decorative-square top-right"></div>
+  <div class="decorative-square bottom-left"></div>
+  <div class="decorative-square bottom-right"></div>
+
+- Convert them into image-based elements instead of plain div squares.
+- Allow each decorative element to display a custom image (using <img> tags or CSS background-image).
+- Make these images draggable by the user using JavaScript (mouse and touch support).
+- Ensure the draggable behavior does not break the layout.
+- Keep their initial positions (top-left, top-right, bottom-left, bottom-right) using CSS.
+
+STEP 2 – Project Cards Grid Layout
+
+- Update the layout of elements with the class <div class="project-card">.
+- Ensure the project cards are displayed side by side instead of stacking vertically.
+- Use CSS Grid or Flexbox to create a horizontal grid layout.
+- Make the layout responsive for different screen sizes (desktop and mobile).
+
+After the Markdown plan, provide the necessary HTML, CSS, and JavaScript code changes to implement each step.
+
+/_ WHAT COPILOT RESPOND ME _/
+
 # Step-by-Step Plan to Update the Website
 
 ## STEP 1 – Replace Decorative Squares with Draggable Images
