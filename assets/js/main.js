@@ -434,6 +434,15 @@ window.cleanupScrollObservers = () => {
   staggerObserver.disconnect();
   console.log("🧹 Observers cleaned up");
 };
+
+// Toggle navigation menu for mobile
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+navToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 // filepath: /assets/js/draggable.js
 document.querySelectorAll(".decorative-image").forEach((image) => {
   image.addEventListener("mousedown", startDrag);
