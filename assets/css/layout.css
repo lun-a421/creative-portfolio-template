@@ -406,6 +406,7 @@
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  stroke-width: 2px rgba(0, 0, 0, 0.3);
 }
 
 .project-card:hover {
