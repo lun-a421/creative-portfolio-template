@@ -481,3 +481,70 @@ document.querySelectorAll(".decorative-image").forEach((image) => {
     document.addEventListener("touchend", onEnd);
   }
 });
+
+// Function to create and animate ovals
+function createBouncingOvals(containerId, numOvals) {
+  const container = document.getElementById(containerId);
+  const colors = ["color-cyan", "color-orange", "color-red", "color-green"];
+  const ovals = [];
+
+  // Create ovals
+  for (let i = 0; i < numOvals; i++) {
+    const oval = document.createElement("div");
+    oval.classList.add(
+      "oval",
+      colors[Math.floor(Math.random() * colors.length)]
+    );
+    oval.style.width = `${Math.random() * 10 + 20}px`; // Random width (always oval)
+    oval.style.height = `${Math.random() * 10 + 10}px`; // Random height (always oval)
+    oval.style.top = `${Math.random() * 100}%`;
+    oval.style.left = `${Math.random() * 100}%`;
+    container.appendChild(oval);
+
+    // Set random speed and direction (slower movement)
+    ovals.push({
+      element: oval,
+      dx: (Math.random() * 1.5 + 0.5) * (Math.random() < 0.5 ? 1 : -1), // Slower horizontal speed
+      dy: (Math.random() * 1.5 + 0.5) * (Math.random() < 0.5 ? 1 : -1), // Slower vertical speed
+    });
+  }
+
+  // Animate ovals
+  function animate() {
+    const containerRect = container.getBoundingClientRect();
+
+    ovals.forEach((oval) => {
+      const rect = oval.element.getBoundingClientRect();
+
+      // Update position
+      let newLeft = rect.left + oval.dx;
+      let newTop = rect.top + oval.dy;
+
+      // Check for collisions
+      if (
+        newLeft <= containerRect.left ||
+        newLeft + rect.width >= containerRect.right
+      ) {
+        oval.dx *= -1; // Reverse horizontal direction
+      }
+      if (
+        newTop <= containerRect.top ||
+        newTop + rect.height >= containerRect.bottom
+      ) {
+        oval.dy *= -1; // Reverse vertical direction
+      }
+
+      // Apply new position
+      oval.element.style.left = `${oval.element.offsetLeft + oval.dx}px`;
+      oval.element.style.top = `${oval.element.offsetTop + oval.dy}px`;
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+
+// Initialize animations for Hero and Contact sections
+createBouncingOvals("hero-ovals", 10);
+createBouncingOvals("contact-ovals", 10);

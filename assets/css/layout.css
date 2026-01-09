@@ -208,6 +208,39 @@
   color: white;
 }
 
+/* General styles for oval containers */
+.oval-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Ensure ovals stay in the background */
+}
+
+/* Oval styles */
+.oval {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 100%;
+  border: 1.5px solid black; /* Add a fine black stroke */
+}
+
+/* Colors for ovals */
+.oval.color-cyan {
+  background: rgb(90, 169, 234); /* Light blue */
+}
+.oval.color-orange {
+  background: rgb(241, 140, 17); /* Orange */
+}
+.oval.color-red {
+  background: rgb(255, 87, 87); /* Red */
+}
+.oval.color-green {
+  background: rgb(94, 208, 117); /* Green */
+}
+
 /* --------------------------------------------------------------------------
      CSS SCROLL-DRIVEN ANIMATIONS (MODERN PARALLAX)
   
