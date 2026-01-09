@@ -570,6 +570,7 @@
      9. Contact Section
      -------------------------------------------------------------------------- */
 .contact {
+  position: relative; /* Ensure child elements are positioned relative to this section */
   padding: var(--space-2xl);
   background: var(--color-bg-alt);
   display: flex;
@@ -580,6 +581,23 @@
 
 .contact-content {
   max-width: 400px;
+}
+
+.contact-image-link {
+  position: absolute;
+  bottom: 20px; /* Safe margin from the bottom */
+  left: 40px; /* Safe margin from the left */
+  z-index: 1; /* Ensure it appears above the background */
+}
+
+.contact-decorative-image {
+  width: 140px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.contact-decorative-image:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 /* --------------------------------------------------------------------------
@@ -621,6 +639,10 @@
      🎓 THE CSS + JAVASCRIPT PARTNERSHIP:
      The JavaScript IntersectionObserver (in main.js) adds classes when elements
      enter the viewport. CSS handles the actual animation via transitions.
+  
+     This separation of concerns is powerful:
+     - JS: "When should the animation start?" (viewport detection)
+     - CSS: "How should the animation look?" (visual effects)
   
      This separation of concerns is powerful:
      - JS: "When should the animation start?" (viewport detection)
