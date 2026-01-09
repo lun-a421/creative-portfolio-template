@@ -1,3 +1,4 @@
+/_ WHAT I SAID TO COPILOT _/
 Do NOT use CSS-only animations.
 This requires JavaScript-based movement and edge collision logic.
 
@@ -60,6 +61,8 @@ OUTPUT REQUIREMENTS
 - First: provide a clear Markdown plan explaining each step.
 - Then: provide the full HTML, CSS, and JavaScript code needed.
 - The result must visually match a bouncing oval animation like the reference image.
+
+/_ WHAT COPILOT PLANED FOR ME _/
 
 # Plan to Create a Bouncing Oval Background Animation
 

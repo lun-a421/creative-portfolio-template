@@ -1,3 +1,4 @@
+/_ WHAT I SAID TO COPILOT _/
 Create a clear and structured Markdown plan to improve my website navigation bar. Follow the steps in this exact order and explain briefly what changes are needed in each step.
 
 STEP 1 – Responsive Navigation Bar
@@ -24,6 +25,8 @@ STEP 3 – Navigation Links to Sections
 - Add smooth scrolling behavior if possible.
 
 After the Markdown plan, provide the necessary HTML, CSS, and JavaScript code changes to implement each step.
+
+/_ WHAT COPILOT SAID _/
 
 # Plan to Improve the Website Navigation Bar
 
